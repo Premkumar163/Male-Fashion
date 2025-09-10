@@ -1,0 +1,123 @@
+#topheader {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 39px;
+   
+  
+    background-color: rgb(9, 9, 9);
+}
+
+.head1{
+   display: flex;
+   justify-content:center ;
+   align-items: center;
+   padding: 10px;
+   margin-right: 23rem;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.me-auto{
+    font-size: 13px;
+    color: aliceblue;
+}
+
+#topmenu {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    background-color: #fff;
+
+
+}
+.me-auto1{
+     margin-top: 3vh;
+    gap: 2.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: black;
+   font-weight: 600;
+}  
+
+#front1:hover
+{
+     color: blue;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; 
+    
+
+}
+
+#imgg {
+
+     margin-top: 14px; 
+     margin-left:3rem;
+}
+
+   /* Login/Admin  Button -> */
+
+  
+  
+
+   #btn01
+   {
+    display: flex;
+     padding-top: 14px; 
+
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
+    background-color:transparent; /* Green */
+    border: transparent;
+ 
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  color: black;
+  margin: 4px 2px;
+  padding-left:1rem;
+ 
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+   }
+   #btn01:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ /* <- Login/Admin  Button End! */
+
+
+
+
+
+/*   section 2 image section ->*/
+
+#container
+{
+   
+}
+
+#imgg1{
+ display: flex;
+    margin-left: 20rem;
+
+}
+
+#imgg2{
+
+ margin-bottom:2rem ;
+    margin-left: 10rem;
+}
+#imgg3{
+ display: flex;
+    margin-left: 40rem;
+}
