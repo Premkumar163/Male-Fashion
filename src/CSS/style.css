@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Handlee&family=Mea+Culpa&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 #topheader {
     display: flex;
     justify-content: space-evenly;
@@ -35,6 +39,12 @@
     background-color: #fff;
 
 
+}
+
+#nevbar{
+  position: fixed;
+  z-index: 1;
+  
 }
 .me-auto1{
      margin-top: 3vh;
@@ -101,23 +111,273 @@
 
 /*   section 2 image section ->*/
 
-#container
-{
+.row1{
+    display: flex;
+    margin-left:2rem;
+}
+.colon1{
    
 }
 
 #imgg1{
  display: flex;
-    margin-left: 20rem;
+    margin-left: 34rem;
 
 }
 
-#imgg2{
 
- margin-bottom:2rem ;
-    margin-left: 10rem;
-}
 #imgg3{
  display: flex;
     margin-left: 40rem;
+}
+
+.bannertext{
+   font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+ 
+ 
+}
+
+#font1{
+    margin-right: 2rem;
+    font-size: 4rem;
+}
+.span1{
+    position:absolute;
+  padding-right:0px;
+
+  left: 28rem;
+    color: rgb(37, 36, 36);
+    padding-right: 2rem;
+     
+
+       /* position: absolute;
+  top: 10px;
+  left: 10px;
+      font-family: "Mea Culpa", cursive;
+
+  font-size: 2px;
+  color: rgb(207, 26, 26); */
+  
+}
+.shopnow1{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+
+  /* underline animation */
+  display: inline-block;
+  position: relative;
+}
+
+.text-overlay::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  background-color: yellow;
+  transition: width 0.3s ease;
+}
+
+.text-overlay:hover::after {
+  width: 100%;
+}
+
+
+/* img2 */
+.row2{
+    display: flex;
+   
+    
+   
+    margin-left:2rem;
+   
+}
+
+#imgg2{
+  position:absolute;
+    top: 55rem;
+ margin-bottom:2rem ;
+    margin-left: 10rem;
+}
+
+.bannertext2{
+   font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+ 
+ 
+}
+
+#font2{
+    margin-right: 2rem;
+    font-size: 4rem;
+}
+.span2{
+    position:absolute;
+  padding-right:0px;
+
+  left: 28rem;
+    color: rgb(37, 36, 36);
+    padding-right: 2rem;
+     
+
+       /* position: absolute;
+  top: 10px;
+  left: 10px;
+      font-family: "Mea Culpa", cursive;
+
+  font-size: 2px;
+  color: rgb(207, 26, 26); */
+  
+}
+.shopnow2{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+#imgg3{
+  position:absolute;
+    top: 72rem;
+ /* margin-bottom:2rem ; */
+     margin-left: 39rem; 
+}
+
+
+.bannertext3{
+   font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+ 
+ 
+}
+
+#font3{
+    margin-right: rem;
+    font-size: rem;
+}
+.span3{
+    position:absolute;
+  padding-right:0px;
+  font-size: 2.4rem;
+  top: 2rem;
+
+  right:12rem ;
+    color: rgb(37, 36, 36);
+    padding-right: 12rem;
+     
+
+       /* position: absolute;
+  top: 10px;
+  left: 10px;
+      font-family: "Mea Culpa", cursive;
+
+  font-size: 2px;
+  color: rgb(207, 26, 26); */
+  
+}
+
+.span03{
+    position:absolute;
+  padding-right:px;
+  font-size: 3rem;
+  top: 39px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  right:0rem ;
+    color: rgb(37, 36, 36);
+    left: 10rem;
+
+}
+
+.shopnow3{
+    position: absolute;
+    top: 8.5rem;
+  color: black;
+    text-decoration: none;
+    left: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/* Admin */
+
+
+#adminheader
+{
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+}
+
+#adminwrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+#leftmenu
+{
+    width: 15%;
+    background-color: rgb(72, 65, 65);
+    height: 500px;
+    padding: 20px;
+}
+#admindata{
+    width: 85%;
+    padding: 30px;
+}
+
+.adminmenu
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* card */
+
+#card{
+  
+  margin-top: 30rem;
+}
+
+.ourtopfont
+{
+  display: flex;
+  justify-content: center;
+font-family: "Bebas Neue", sans-serif;
+
+}
+h1{
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+
+#topCloths{
+  margin-top: 5rem;
+}
+
+/* carditems */
+
+#carditems{
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
 }
