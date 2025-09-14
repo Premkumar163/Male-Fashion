@@ -17,9 +17,62 @@ import top1 from "../images/top1.jpg";
 import top2 from "../images/top2.jpg";
 import top3 from "../images/top3.jpg";
 
+import { useState,useEffect} from 'react';
+import axios from 'axios';
+
 
 const Home = () => {
-    return (
+
+  const [mydata,setmydata]=useState([])
+
+  const loadData=async()=>{
+        let api="http://localhost:3000/products";
+    const response=await axios.get(api);
+    console.log(response.data)
+    setmydata(response.data);
+  }
+
+  useEffect(()=>{
+    loadData();
+  }, [])
+
+  const ans= mydata.map((key)=>{
+    return(
+      
+      
+
+      <>
+      {/* <div id='card2'>
+
+       <div id='carditems2'>
+      <div id='topCloths2'> */}
+      
+        
+ <Card style={{ width: '18rem'  }}>
+      <Card.Img variant="top" src={key.image}  height="200" />
+      <Card.Body>
+        <Card.Title style={{}}>{key.brand}</Card.Title>
+        <Card.Text>
+         {key.name}
+           <br />
+           <span style={{color:"red"}}>Category : {key.category}</span> 
+           <br />
+           <span style={{color:"navy" , fontWeight:"bold"}}>Price : {key.price}</span> 
+        </Card.Text>
+        <Button variant="primary">Add To Cart</Button>
+      </Card.Body>
+    </Card>
+
+    {/* </div>
+    </div>
+      
+</div> */}
+      </>
+    )
+  })
+
+
+  return (
         <>
             <Carousel>
                 <Carousel.Item>
@@ -187,10 +240,22 @@ const Home = () => {
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
+<br /><br />
+           
 
+         
     </div>
     </div>
 </div>
+
+<div className='ourtopfont1'>
+            <h2 id='trend'> Trending This Week</h2>
+             
+            </div>
+
+<div id='topwacthes' style={{width:"", margin:"auto", marginTop:"1rem"}}>
+        {ans}
+        </div>
 
 
         </>

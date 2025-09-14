@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Digital Watch",
-      "brand": "Titan",
-      "category": "womens",
-      "price": 20000,
-      "images": "dfghfdhfghf"
-    },
-    {
       "id": "7f06",
       "name": "Guru",
       "brand": "Roster",
@@ -23,17 +15,35 @@
       "category": "male",
       "price": "9900",
       "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757684351/xh1o5b0zyl2kk7r01ah9.gif"
+    },
+    {
+      "id": "78eb",
+      "name": "Mukash",
+      "brand": "Roster",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757755416/ifrjsovdexxywaffi4za.jpg"
+    },
+    {
+      "id": "403c",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757758172/hgzx4fc8kzcxmxdmu4vh.png"
+    },
+    {
+      "id": "4b9b",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757758213/gzzz7kggcugdxksnbkwn.jpg"
+    },
+    {
+      "id": "ff56",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757769103/wwxujdv1j5ytynpkot9s.gif"
     }
   ],
   "admin": [
     {
-      "id": 1,
+      "id": "1",
       "adminname": "prem",
       "adminid": "premkumar829107@gmail.com",
       "password": "prem123"
     },
     {
-      "id": 1,
+      "id": "1",
       "adminname": "Raj",
       "adminid": "raj@gmail.com",
       "password": "raj123"

@@ -355,6 +355,7 @@
 #card{
   
   margin-top: 30rem;
+  margin-left: 10rem ;
 }
 
 .ourtopfont
@@ -371,6 +372,7 @@ h1{
 
 
 #topCloths{
+  
   margin-top: 5rem;
 }
 
@@ -378,6 +380,27 @@ h1{
 
 #carditems{
   display: flex;
-  justify-content: center;
+  
   gap: 2.5rem;
+}
+
+
+/* Admin add cards items */
+
+
+#trend{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ourtopfont1
+{
+  display: flex;
+font-family: "Bebas Neue", sans-serif;
+
+}
+
+#topwacthes
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
