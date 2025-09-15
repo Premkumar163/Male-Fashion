@@ -363,6 +363,7 @@
   display: flex;
   justify-content: center;
 font-family: "Bebas Neue", sans-serif;
+margin-right: 8rem;
 
 }
 h1{
@@ -389,6 +390,8 @@ h1{
 
 
 #trend{
+  
+  margin-left: 5.3rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ourtopfont1
@@ -403,4 +406,9 @@ font-family: "Bebas Neue", sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.cart{
+  margin-top: 0.5rem;
+  color: #fff;
 }

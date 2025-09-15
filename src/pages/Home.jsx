@@ -20,10 +20,14 @@ import top3 from "../images/top3.jpg";
 import { useState,useEffect} from 'react';
 import axios from 'axios';
 
+import { useDispatch } from 'react-redux';
+import { addTocart } from '../cartSlice';
+
 
 const Home = () => {
 
   const [mydata,setmydata]=useState([])
+  const dispatch = useDispatch();
 
   const loadData=async()=>{
         let api="http://localhost:3000/products";
@@ -38,35 +42,23 @@ const Home = () => {
 
   const ans= mydata.map((key)=>{
     return(
-      
-      
-
-      <>
-      {/* <div id='card2'>
-
-       <div id='carditems2'>
-      <div id='topCloths2'> */}
-      
-        
- <Card style={{ width: '18rem'  }}>
+ <>
+ <Card style={{ width: '18rem', margin:"10px"   }}>
       <Card.Img variant="top" src={key.image}  height="200" />
       <Card.Body>
         <Card.Title style={{}}>{key.brand}</Card.Title>
         <Card.Text>
          {key.name}
-           <br />
-           <span style={{color:"red"}}>Category : {key.category}</span> 
+           
+           <span style={{color:"red",padding:"2px"}}>Category : {key.category}</span> 
            <br />
            <span style={{color:"navy" , fontWeight:"bold"}}>Price : {key.price}</span> 
         </Card.Text>
-        <Button variant="primary">Add To Cart</Button>
+        <Button variant="primary" onClick={()=>{dispatch(addTocart({id:key.id, name:key.name, brand:key.brand, category:key.category, price:key.price, images:key.images, qnty:1}))}}>Add To Cart</Button>
       </Card.Body>
     </Card>
 
-    {/* </div>
-    </div>
-      
-</div> */}
+    
       </>
     )
   })
@@ -198,13 +190,13 @@ const Home = () => {
       
         
  <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={top1}  height="300" />
+      <Card.Img  variant="top" src={top1}  height="300" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        {/* <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
     </Card>
 
@@ -215,12 +207,12 @@ const Home = () => {
         
  <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={top2}  height="300" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+      <Card.Body >
+         {/* <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        </Card.Text> */}
+        {/* <Button variant="primary">Go somewhere</Button>  */}
       </Card.Body>
     </Card>
 
@@ -233,11 +225,11 @@ const Home = () => {
  <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={top3}  height="300" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        {/* <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
     </Card>
 <br /><br />
@@ -249,11 +241,12 @@ const Home = () => {
 </div>
 
 <div className='ourtopfont1'>
+
             <h2 id='trend'> Trending This Week</h2>
              
             </div>
 
-<div id='topwacthes' style={{width:"", margin:"auto", marginTop:"1rem"}}>
+<div id='topwacthes' style={{width:"65rem",height:"10rem",gap:"3rem", margin:"auto", marginTop:"2rem"}}>
         {ans}
         </div>
 

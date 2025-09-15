@@ -1,38 +1,36 @@
 {
   "products": [
     {
-      "id": "7f06",
-      "name": "Guru",
+      "id": "bd1a",
+      "name": "Nike",
+      "brand": "Nike",
+      "category": "male",
+      "price": "1000",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757929427/u6olmiau7hrr2ditbhih.jpg"
+    },
+    {
+      "id": "32b3",
+      "name": "Stylish Vintage Roadster Car Enthusiast T-Shirt",
       "brand": "Roster",
       "category": "male",
-      "price": "9900",
-      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757684340/ohsr6qnrngzhwrqekfbz.gif"
+      "price": "400",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757931442/y6art4isvntmajqrxnwq.jpg"
     },
     {
-      "id": "da07",
-      "name": "Guru",
+      "id": "1139",
+      "name": "COOFANDY Men's Zipper Polo Shirts Short Sleeve Ribbed Knit Polo T Shirts Fashion Casual Golf Shirts",
       "brand": "Roster",
       "category": "male",
-      "price": "9900",
-      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757684351/xh1o5b0zyl2kk7r01ah9.gif"
+      "price": "1000",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757931636/seornm1zhlihl0m9dvls.jpg"
     },
     {
-      "id": "78eb",
-      "name": "Mukash",
-      "brand": "Roster",
-      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757755416/ifrjsovdexxywaffi4za.jpg"
-    },
-    {
-      "id": "403c",
-      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757758172/hgzx4fc8kzcxmxdmu4vh.png"
-    },
-    {
-      "id": "4b9b",
-      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757758213/gzzz7kggcugdxksnbkwn.jpg"
-    },
-    {
-      "id": "ff56",
-      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757769103/wwxujdv1j5ytynpkot9s.gif"
+      "id": "cc82",
+      "name": "   Visit site Techwear Cyberpunk Tshirt: Harajuku Streetwear, Kanji, Harajuku, Graphics",
+      "brand": "Highlander",
+      "category": "male",
+      "price": "400",
+      "image": "http://res.cloudinary.com/dowj1mbzj/image/upload/v1757931871/sguh8fjedhyzsbgvmnur.jpg"
     }
   ],
   "admin": [

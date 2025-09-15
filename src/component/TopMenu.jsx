@@ -11,6 +11,8 @@ import Form from 'react-bootstrap/Form';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -35,15 +37,22 @@ const TopMenu=()=>{
             if (response.data[0].password==password)
             {
                  navigate("/admin")
+            
+             if(response.data[0].email==email){
+                toast.warning("Incorrect Email", { autoClose: 1000 });
             }
+          }
             else 
             {
-              alert("Galat pass")
+              // alert("Galat pass")
+
+               toast.warning("Incorrect Password", { autoClose: 1000 });
+             
             }
       }
       else 
       {
-        alert("Invalid Email!");
+         toast.error("Server error!", { autoClose: 3000 });
       }
    }
 return(
@@ -77,8 +86,7 @@ return(
 
 
         <div id="rightmenu">
-              <Button id="rightmenu++-+4
-              , n" variant="primary" onClick={handleShow}>
+              <Button id="rightmenu" variant="primary" onClick={handleShow}>
       Admin Login
       </Button>
               
@@ -119,6 +127,7 @@ return(
         </Modal.Footer>
       </Modal>
 
+<ToastContainer />
 
         </>
     )
