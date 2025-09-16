@@ -69,7 +69,7 @@ return(
         <Container>
          
           <Nav className="me-auto1">
-            <Nav.Link id="front1" href="#home">Home</Nav.Link>
+            <Nav.Link id="front1" to="home">Home</Nav.Link>
             <Nav.Link href="#shop">Shop</Nav.Link>
             <Nav.Link href="#pages">Pages</Nav.Link>
             <Nav.Link href="#blogs">Blog</Nav.Link>

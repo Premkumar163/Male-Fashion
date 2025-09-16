@@ -39,8 +39,9 @@ const Orderproduct=()=>{
 
     return(
         <>
-<h1>  Display Data </h1>
-        <table border="2" cellPadding="10" cellSpacing="15">
+        <div id=" DisplayData">
+<h1 id="DisplayDatafont">  Display Data </h1>
+        <table border="2" cellPadding="14" cellSpacing="15"  style={{ width: "100%", borderCollapse: "collapse" }}>
           <tr>
             
             <th>Name</th>
@@ -51,6 +52,8 @@ const Orderproduct=()=>{
           </tr>
           {ans}
         </table>
+        </div>
+        
         
         </>
     )

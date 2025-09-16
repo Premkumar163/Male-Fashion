@@ -51,7 +51,7 @@ const MyCart = () => {
     return (
         <>
         <div id="topcart">
-            <h1> Cart Data</h1>
+            <h1 id="cartfont"> Cart Data</h1>
             <h3 align="center">Total Amount : <FaRupeeSign /> {TotalAmount}</h3>
                <button onClick={CheckOut}>Checkout</button>
               <Table striped bordered hover>
