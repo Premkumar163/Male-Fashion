@@ -53,6 +53,9 @@
 // export default cartSlice.reducer;
 
 
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 import { createSlice } from "@reduxjs/toolkit";
 
@@ -65,7 +68,9 @@ const cartSlice = createSlice({
     addTocart: (state, actions) => {
       const status = state.cart.filter(key => key.id == actions.payload.id);
       if (status.length >= 1) {
-        alert("Product Already Added!");
+       
+         toast("Product Already Added!", { autoClose: 3000 });
+         <ToastContainer />
       } else {
         state.cart.push(actions.payload);
       }
@@ -81,7 +86,9 @@ const cartSlice = createSlice({
       for (let i = 0; i < state.cart.length; i++) {
         if (state.cart[i].id == actions.payload.id) {
           if (state.cart[i].qnty <= 1) {
-            alert("Quantity not less than 1 ");
+            // alert("Quantity not less than 1 ");
+              toast.warning("Quantity not less than 1", { autoClose: 1000 });
+         <ToastContainer />
           } else {
             state.cart[i].qnty--;
           }
@@ -91,7 +98,8 @@ const cartSlice = createSlice({
     cartDataRemove: (state, actions) => {
       state.cart = state.cart.filter(item => item.id != actions.payload.id);
     }
-  }
+    
+  } 
 });
 
 export const { addTocart, incQnty, decQnty, cartDataRemove } = cartSlice.actions;

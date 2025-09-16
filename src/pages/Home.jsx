@@ -66,7 +66,8 @@ const Home = () => {
 
   return (
         <>
-            <Carousel>
+        <div>
+            <Carousel id='topbanner'>
                 <Carousel.Item>
                     <img src={ban1} alt="Banner 1" style={{ width: "100%", height: "500px", objectFit: "cover" }} />
                     <Carousel.Caption>
@@ -91,6 +92,7 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            </div>
 
 
             {/* section 2 images setion */}

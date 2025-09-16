@@ -11,7 +11,9 @@ const AdminDashBoard=()=>{
            <div id="adminwrapper">
               <div id="leftmenu"> 
                    
-               <Link to="addproduct" className="adminmenu">  Upload Product </Link>   
+               <Link to="addproduct" className="adminmenu">  Upload Product </Link>
+               <br /><br /> 
+                <Link to="orderproduct" className="adminmenu1">  Order Details </Link>   
 
               </div>
               <div id="admindata">

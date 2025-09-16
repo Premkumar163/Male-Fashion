@@ -41,9 +41,13 @@
 
 }
 
-#nevbar{
+#Nevbar{
+  position: sticky;
+ top: 0;
+ 
   position: fixed;
   z-index: 1;
+  width: 100%;
   
 }
 .me-auto1{
@@ -61,6 +65,9 @@
   transition: color 0.3s ease-in-out; 
     
 
+}
+#topbanner{
+  margin-top:6rem ;
 }
 
 #imgg {
@@ -349,6 +356,17 @@
     text-decoration: none;
 }
 
+/* Order details */
+
+
+.adminmenu1
+{
+ 
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 /* card */
 
@@ -407,8 +425,27 @@ font-family: "Bebas Neue", sans-serif;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+#topcart{
+  margin-top: 5rem;
+}
 .cart{
   margin-top: 0.5rem;
   color: #fff;
+}
+
+#CheckOuttop{
+  margin-top: 6rem;
+  
+}
+
+#checkfont
+{
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* payment */
+
+#toppayment
+{
+  margin-top: 5rem;
 }

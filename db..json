@@ -46,5 +46,40 @@
       "adminid": "raj@gmail.com",
       "password": "raj123"
     }
+  ],
+  "order": [
+    {
+      "name": "prem",
+      "city": "",
+      "address": "prem123",
+      "contact": "",
+      "pin": ""
+    },
+    {
+      "name": "prem",
+      "city": "",
+      "address": "prem123",
+      "contact": "",
+      "pin": ""
+    },
+    {
+      "id": "7fc6"
+    },
+    {
+      "id": "d650",
+      "name": "Sachin Meena",
+      "city": "Bhopal",
+      "address": "Parbhat petrol pump",
+      "contact": "7004802918",
+      "pin": "462023"
+    },
+    {
+      "id": "15b0",
+      "name": "Guru",
+      "city": "--select--",
+      "address": "harladih",
+      "pin": "825108",
+      "contact": "7004802918"
+    }
   ]
 }
